@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="41.027">
+<testcase classname="Search for flights and book a one-way flying ticket" name="Successful Login with Valid Credentials" time="18.396">
+<system-out><![CDATA[Given User is on LogIn Page.................................................passed
+When User enters UserName as "admin" and Password as "12345"................passed
+Then Validate Login Successful..............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for flights and book a one-way flying ticket" name="Search for flights with multi city flying option" time="1.957">
+<system-out><![CDATA[Given User selects flying type..............................................passed
+Then User selects source location as "LA-US"................................passed
+Then User selects destination location as "NY-US"...........................passed
+Then User selects date of depart............................................passed
+Then User selects date of return............................................passed
+Then User selects two adults with premium economy class ticket..............passed
+When User clicks on search..................................................passed
+Then verify flights of "Los Angeles" to "New York City".....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search for flights and book a one-way flying ticket" name="Search for flights with one way flying option" time="20.562">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@data-day='31']/button&quot;}&#10;  (Session info: chrome=80.0.3987.100)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'rajesh-testsigma.local', ip: 'fe80:0:0:0:421:5d23:10ad:c75a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_221'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/vx/t7cnff714jl...}, goog:chromeOptions: {debuggerAddress: localhost:59082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: 425480ea77ecc04e0859786100670f51&#10;*** Element info: {Using=xpath, value=//td[@data-day='31']/button}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given User selects flying type one way......................................passed
+Then User select source location as "WDC-US"................................passed
+Then User select destination location as "LD-UK"............................passed
+Then User selects depart Date...............................................failed
+Then User selects one adults with Business class ticket.....................skipped
+When User clicks on search..................................................skipped
+Then verify booking flights of "Washington, D.C." to "London"...............skipped
+Then User clicks third flight to Book and continue..........................skipped
+Then User verify details of journey summery "Washington, D.C. - London".....skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@data-day='31']/button"}
+  (Session info: chrome=80.0.3987.100)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'rajesh-testsigma.local', ip: 'fe80:0:0:0:421:5d23:10ad:c75a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_221'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/vx/t7cnff714jl...}, goog:chromeOptions: {debuggerAddress: localhost:59082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 425480ea77ecc04e0859786100670f51
+*** Element info: {Using=xpath, value=//td[@data-day='31']/button}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy15.click(Unknown Source)
+	at com.ts.pageobjects.HomePageOneWayObject.chooseDepartDate(HomePageOneWayObject.java:132)
+	at com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_depart_Date(OnewayTicketBookingSteps.java:138)
+	at ✽.User selects depart Date(file:///Users/rajesh/work/eclipse-workspace/cucumber_selenium_java/src/main/resources/features/TravelBooking.feature:22)
+]]></failure>
+</testcase>
+</testsuite>

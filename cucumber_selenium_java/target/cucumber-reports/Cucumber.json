@@ -1,0 +1,342 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-02-13T16:06:50.213Z",
+        "line": 3,
+        "name": "Successful Login with Valid Credentials",
+        "description": "",
+        "id": "search-for-flights-and-book-a-one-way-flying-ticket;successful-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15369000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User is on LogIn Page",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_is_on_LogIn_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2965000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters UserName as \"admin\" and Password as \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"12345\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_enters_UserName_as_and_Password_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Validate Login Successful",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.validate_Login_Successful()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-13T16:07:08.616Z",
+        "line": 8,
+        "name": "Search for flights with multi city flying option",
+        "description": "",
+        "id": "search-for-flights-and-book-a-one-way-flying-ticket;search-for-flights-with-multi-city-flying-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 55000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User selects flying type",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_flying_type()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 330000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User selects source location as \"LA-US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LA-US\"",
+                  "offset": 32
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_source_location_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 153000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User selects destination location as \"NY-US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"NY-US\"",
+                  "offset": 37
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_destination_location_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 279000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "User selects date of depart",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_date_of_depart()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 586000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User selects date of return",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_date_of_return()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 424000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User selects two adults with premium economy class ticket",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_two_adults_with_premium_economy_class_ticket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 49000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User clicks on search",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_clicks_on_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 78000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "verify flights of \"Los Angeles\" to \"New York City\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Los Angeles\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"New York City\"",
+                  "offset": 35
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.verify_flights_of_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-02-13T16:07:10.577Z",
+        "line": 18,
+        "name": "Search for flights with one way flying option",
+        "description": "",
+        "id": "search-for-flights-and-book-a-one-way-flying-ticket;search-for-flights-with-one-way-flying-option",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 52000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User selects flying type one way",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_flying_type_one_way()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 184000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User select source location as \"WDC-US\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"WDC-US\"",
+                  "offset": 31
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_select_source_location_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 167000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User select destination location as \"LD-UK\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"LD-UK\"",
+                  "offset": 36
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_select_destination_location_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//td[@data-day\u003d\u002731\u0027]/button\"}\n  (Session info: chrome\u003d80.0.3987.100)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027rajesh-testsigma.local\u0027, ip: \u0027fe80:0:0:0:421:5d23:10ad:c75a%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.15.3\u0027, java.version: \u00271.8.0_221\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.100, chrome: {chromedriverVersion: 80.0.3987.16 (320f6526c1632..., userDataDir: /var/folders/vx/t7cnff714jl...}, goog:chromeOptions: {debuggerAddress: localhost:59082}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: 425480ea77ecc04e0859786100670f51\n*** Element info: {Using\u003dxpath, value\u003d//td[@data-day\u003d\u002731\u0027]/button}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy15.click(Unknown Source)\n\tat com.ts.pageobjects.HomePageOneWayObject.chooseDepartDate(HomePageOneWayObject.java:132)\n\tat com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_depart_Date(OnewayTicketBookingSteps.java:138)\n\tat ✽.User selects depart Date(file:///Users/rajesh/work/eclipse-workspace/cucumber_selenium_java/src/main/resources/features/TravelBooking.feature:22)\n",
+              "duration": 20153000000,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "User selects depart Date",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_depart_Date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "User selects one adults with Business class ticket",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_selects_one_adults_with_Business_class_ticket()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "User clicks on search",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_clicks_on_search()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "verify booking flights of \"Washington, D.C.\" to \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Washington, D.C.\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.verify_booking_flights_of_to(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "User clicks third flight to Book and continue",
+            "match": {
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_clicks_third_flight_to_Book_and_continue()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "User verify details of journey summery \"Washington, D.C. - London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Washington, D.C. - London\"",
+                  "offset": 39
+                }
+              ],
+              "location": "com.ts.stepdefinitions.OnewayTicketBookingSteps.user_verify_details_of_journey_summery(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Search for flights and book a one-way flying ticket",
+    "description": "",
+    "id": "search-for-flights-and-book-a-one-way-flying-ticket",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/features/TravelBooking.feature",
+    "tags": []
+  }
+]
