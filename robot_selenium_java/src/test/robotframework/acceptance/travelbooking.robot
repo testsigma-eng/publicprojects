@@ -56,7 +56,7 @@ User select destination location as "LD-UK"
 User selects depart Date
     Click Element    id=departure
     Click Element    xpath=(//button[@class='month-next'])[1]
-    Click Element    xpath=//td[@data-day='31']/button
+    Click Element    xpath=//td[@data-day='28']/button
     Click Element    xpath=(//button[text()='Ok'])[1]
 User selects one adults with Business class ticket
     Click Element    xpath=//div[@class='d-flex']
